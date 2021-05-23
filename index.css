@@ -1,0 +1,49 @@
+fieldset {
+    border: 2px groove #C7C7C7;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#red, #green, #blue {
+    float: left;
+    clear: left;
+    width: 300px;
+    margin: 15px;
+}
+
+#container {
+    width: 300px;
+    height: 103px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    background-image: none;
+}
+
+.ui-button:focus {
+    background: #007fff;
+    color: #ffffff;
+}
+
+@media (max-width: 680px) {
+    main {
+        justify-content: center;
+    }
+}
+
+#red .ui-slider-range { background: #ef2929; }
+
+#red .ui-slider-handle { border-color: #ef2929; }
+
+#green .ui-slider-range { background: #8ae234; }
+
+#green .ui-slider-handle { border-color: #8ae234; }
+
+#blue .ui-slider-range { background: #729fcf; }
+
+#blue .ui-slider-handle { border-color: #729fcf; }
